@@ -1,13 +1,13 @@
 [package]
-name = "pyo3_template"
+name = "GetPlayerCard"
 version = "0.0.1"
 edition = "2021"
-description = "A Pyo3 Project Template For HydroRoll."
-license = "MIT"
-documentation = "https://{project}.hydroroll.team/"
-homepage = "https://hydroroll.team/"
-repository = "https://github.com/HydroRoll-Team/{project}"
-authors = ["yourname"]
+description = "Experimentally get your character card through an object-oriented program"
+license = "AGPL-3.0"
+documentation = "https://get-pc.hydroroll.team/"
+homepage = "https://www.hydroroll.team/"
+repository = "https://github.com/HydroRoll-Team/get-pc"
+authors = ["HsiangNianian"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
