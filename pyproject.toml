@@ -1,0 +1,117 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "pyo3_template"
+dynamic = ["version"]
+description = "HydroRoll Pyo3 Project Template"
+authors = [{ name = "yourname", email = "you@hydroroll.team" }]
+dependencies = []
+requires-python = ">=3.9"
+readme.content-type = "text/x-rst"
+readme.text = """
+"""
+license = { text = "MIT" }
+keywords = ["hydroroll"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Robot Framework",
+    "Framework :: Robot Framework :: Library",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[project.urls]
+homepage = "https://hydroroll.team/"
+repository = "https://github.com/HydroRoll-Team/{project}"
+documentation = "https://{project}.hydroroll.team/"
+
+[project.scripts]
+pyo3_template = "pyo3_template.__main__:main"
+pyo3t = "pyo3_template.__main__:main"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+module-name = "pyo3_template._core"
+python-package = "pyo3_template"
+python-source = "src"
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+# Assume Python 3.8
+target-version = "py39"
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
+select = ["E4", "E7", "E9", "F"]
+ignore = []
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+[dependency-groups]
+dev = [
+    "docutils>=0.21.2",
+    "furo>=2024.8.6",
+    "myst-parser>=3.0.1",
+    "ruff>=0.9.6",
+    "sphinx>=7.4.7",
+    "sphinx-autobuild>=2024.10.3",
+    "sphinx-intl>=2.3.1",
+    "sphinxcontrib-httpdomain>=1.8.1",
+    "tomli>=2.2.1",
+]

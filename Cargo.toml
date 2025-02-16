@@ -1,0 +1,19 @@
+[package]
+name = "pyo3_template"
+version = "0.0.1"
+edition = "2021"
+description = "A Pyo3 Project Template For HydroRoll."
+license = "MIT"
+documentation = "https://{project}.hydroroll.team/"
+homepage = "https://hydroroll.team/"
+repository = "https://github.com/HydroRoll-Team/{project}"
+authors = ["yourname"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.19.2", features = ["abi3-py39"] }
+time = { version = "0.3.36", features = ["formatting", "macros", "local-offset"] }
