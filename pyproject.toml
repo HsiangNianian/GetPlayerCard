@@ -3,17 +3,17 @@ requires = ["maturin>=1.4,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "pyo3_template"
+name = "GetPlayerCard"
 dynamic = ["version"]
-description = "HydroRoll Pyo3 Project Template"
-authors = [{ name = "yourname", email = "you@hydroroll.team" }]
+description = "Experimentally get your character card through an object-oriented program"
+authors = [{ name = "HsiangNianian", email = "i@jyunko.cn" }]
 dependencies = []
 requires-python = ">=3.9"
 readme.content-type = "text/x-rst"
 readme.text = """
 """
-license = { text = "MIT" }
-keywords = ["hydroroll"]
+license = { text = " AGPL-3.0" }
+keywords = ["hydroroll", "pyo3", "rust", "get-player-card", "get-pc", "HydroRoll", "HydroRoll-Team"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Framework :: Robot Framework",
@@ -26,18 +26,18 @@ classifiers = [
 ]
 
 [project.urls]
-homepage = "https://hydroroll.team/"
-repository = "https://github.com/HydroRoll-Team/{project}"
-documentation = "https://{project}.hydroroll.team/"
+homepage = "https://getpc.hydroroll.team/"
+repository = "https://github.com/HydroRoll-Team/GetPlayerCard"
+documentation = "https://getpc.hydroroll.team/"
 
 [project.scripts]
-pyo3_template = "pyo3_template.__main__:main"
-pyo3t = "pyo3_template.__main__:main"
+getpc = "getpc.__main__:main"
+getplayercard = "getpc.__main__:main"
 
 [tool.maturin]
 features = ["pyo3/extension-module"]
-module-name = "pyo3_template._core"
-python-package = "pyo3_template"
+module-name = "getpc._core"
+python-package = "getpc"
 python-source = "src"
 
 [tool.ruff]

@@ -1,4 +1,7 @@
-pyo3-project-template
-=====================
+GetPlayerCard
+=============
 
-HydroRoll Pyo3 Project Template
+
+    [!NOTE]
+    
+    Get Your Own Character Player Card By Using *GetPlayerCard*.
