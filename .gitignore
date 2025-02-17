@@ -39,3 +39,7 @@ logs/
 *.lib
 *.a
 *.so.*
+
+# excel data file
+*.csv
+*.xlsx
