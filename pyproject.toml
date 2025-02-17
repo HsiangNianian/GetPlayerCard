@@ -7,7 +7,10 @@ name = "GetPlayerCard"
 dynamic = ["version"]
 description = "Experimentally get your character card through an object-oriented program"
 authors = [{ name = "HsiangNianian", email = "i@jyunko.cn" }]
-dependencies = []
+dependencies = [
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+]
 requires-python = ">=3.9"
 readme.content-type = "text/x-rst"
 readme.text = """
