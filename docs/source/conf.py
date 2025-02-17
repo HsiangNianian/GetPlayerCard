@@ -26,12 +26,12 @@ AUTHORS = ",".join([f"{aut}" for aut in AUTHOR_TABLE])
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "HydroRoll"  # PROJECT_NAME
+project = "GetPlayerCard"  # PROJECT_NAME
 release = PROJECT_VERSION  # "latest"
-copyright = "2023-PRESENT, HydroRoll-Team."
+copyright = "2025-PRESENT, HsiangNianian"
 author = AUTHORS  # "Hsiang Nianian"
 
-# html_title = "HydroRoll Docs"
+# html_title = "GetPlayerCard Docs"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -57,11 +57,9 @@ extensions = [
 
 doctest_global_setup = '''
 try:
-    import hydro_roll as hr
-    import hydro_roll_core as hrc
+    import getpc
 except ImportError:
-    hr = None
-    hrc = None
+    getpc = None
 '''
 todo_include_todos = True
 todo_emit_warnings = True
@@ -69,7 +67,7 @@ intersphinx_mapping = {'python': ('https://docs.python.org/3', None)}
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 extlinks = {
-    "issue": ("https://github.com/HydroRoll-Team/HydroRoll/issues/%s", "[issue %s]"),
+    "issue": ("https://github.com/HsiangNianian/GetPlayerCard/issues/%s", "[issue %s]"),
 }
 source_suffix = {
     ".rst": "restructuredtext",
@@ -87,15 +85,15 @@ rst_prolog = """
 rst_epilog = """
 .. |psf| replace:: Python Software Foundation
 """
-locale_dirs = ["../locales/"]  # path is example but recommended.
+# locale_dirs = ["../locales/"]
 gettext_compact = False  # optional.
 gettext_uuid = True  # optional.
 numfig = True # Figures, tables and code blocks are automatically numbered if they have a title
 pygments_style = "rrt" # default sphinx, change the style of code block
 math_number_all = True # Number all equations, figures, tables and code blocks
-html_additional_pages = {
-    'copy': 'copying.html',
-}
+# html_additional_pages = {
+#     'copy': 'copying.html',
+# }
 html_split_index = True # Split the index page by each alphabet
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -117,8 +115,8 @@ html_copy_source = True
 html_show_sourcelink = True
 
 html_theme_options = {
-    "announcement": "<em><a href='#'>documentation</a> is still under construction now, welcome any <a href='contributing.html'>contribution</a>!</em>",
-    "source_repository": "https://github.com/HydroRoll-Team/HydroRoll/",
+    # "announcement": "<em><a href='#'>documentation</a> is still under construction now, welcome any <a href='contributing.html'>contribution</a>!</em>",
+    "source_repository": "https://github.com/HsiangNianian/GetPlayerCard/",
     "source_branch": "main",
     "source_directory": "docs/source/",
     # Toc options
@@ -130,13 +128,13 @@ html_theme_options = {
     "footer_icons": [
         {
             "name": "GitHub",
-            "url": "https://github.com/HydroRoll-Team/HydroRoll/",
+            "url": "https://github.com/HsiangNianian/GetPlayerCard/",
             "html": "",
             "class": "fa-brands fa-github",
         },
         {
             "name": "Pypi",
-            "url": "https://pypi.org/project/hydro_roll/",
+            "url": "https://pypi.org/project/GetPlayerCard/",
             "html": "",
             "class": "fa-brands fa-python",
         },
