@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.4.3] - 2025-02-18
+### New Features
+- [`de5a4c3`](https://github.com/HsiangNianian/GetPlayerCard/commit/de5a4c380efbdd68e550b508fd3e6e62f6908b29) - implement CharacterCard class and export functionality to Excel *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+### Chores
+- [`7c76943`](https://github.com/HsiangNianian/GetPlayerCard/commit/7c76943ba5cae87d19f4c9ea229a9cfd3aaca503) - bump package version to 0.4.3 *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+
 ## [v0.0.3] - 2025-02-17
 ### New Features
 - [`9628957`](https://github.com/HsiangNianian/GetPlayerCard/commit/96289577270c80c06462d0776f270712790d4113) - implement character generation and Excel export functionality *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
@@ -21,3 +29,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [`b97d974`](https://github.com/HsiangNianian/GetPlayerCard/commit/b97d9746d91ad6402a71bc0ae880fd0a3aa4d79b) - bump package version to 0.0.3 *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
 
 [v0.0.3]: https://github.com/HsiangNianian/GetPlayerCard/compare/v0.0.2...v0.0.3
+[v0.4.3]: https://github.com/HsiangNianian/GetPlayerCard/compare/v0.0.3...v0.4.3
