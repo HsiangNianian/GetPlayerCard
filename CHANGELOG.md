@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.4.4] - 2025-02-18
+### New Features
+- [`964f4e5`](https://github.com/HsiangNianian/GetPlayerCard/commit/964f4e5b03cc6df11891686a9f58e003b6b90f3f) - enhance CharacterCard class with detailed attributes and methods; update export_to_excel function documentation; remove unused RuleSet class and related tests *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+### Chores
+- [`25594a9`](https://github.com/HsiangNianian/GetPlayerCard/commit/25594a9c18a8a7bbccf00e60d70c665a46ecc5de) - bump package version to 0.4.4 *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
+
+
 ## [v0.4.3] - 2025-02-18
 ### New Features
 - [`de5a4c3`](https://github.com/HsiangNianian/GetPlayerCard/commit/de5a4c380efbdd68e550b508fd3e6e62f6908b29) - implement CharacterCard class and export functionality to Excel *(commit by [@HsiangNianian](https://github.com/HsiangNianian))*
@@ -30,3 +38,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [v0.0.3]: https://github.com/HsiangNianian/GetPlayerCard/compare/v0.0.2...v0.0.3
 [v0.4.3]: https://github.com/HsiangNianian/GetPlayerCard/compare/v0.0.3...v0.4.3
+[v0.4.4]: https://github.com/HsiangNianian/GetPlayerCard/compare/v0.4.3...v0.4.4
