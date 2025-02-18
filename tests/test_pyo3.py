@@ -1,4 +1,7 @@
-from getpc._core import sum_as_string
+from getpc import CharacterCard, export_to_excel
 
-if __name__ == "__main__":
-    print(sum_as_string(1, 2))
+card = CharacterCard("Alice")
+card.set_attribute("STR", 15)
+card.set_skill("Swordsmanship", 75)
+
+export_to_excel(card, "alice.xlsx")

@@ -1,0 +1,5 @@
+{
+    "name": "Custom Rules",
+    "attributes": ["STR", "DEX", "INT"],
+    "skills": ["Swordsmanship", "Archery", "Magic"]
+}
